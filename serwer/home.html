@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="ind_style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="ind_script.js"></script>
+    <script src="analise.js"></script>
+</head>
+
+<body>
+
+    <header>
+        Serwis zbierający dane dotyczące zmian temperatury.
+    </header>
+
+    <div id="GUI_panel">    
+        <div id="offline_panel">
+            <button onclick="addMesu()"> Dodaj pomiar </button>
+            <button onclick="gatherData()"> Nieprzesłane Dane </button>
+            <button onclick="iterateThrouhDataToSend()"> Prześlij dane </button>
+        </div>
+
+        <div id="online_panel">
+            <button onclick="avgDayByDayForm()"> Średnia w przeciągu kliku dni </button>
+            <button onclick="tempInDayForm()"> Temperatura danego dnia </button>
+            <button onclick="getAllMesu()"> Wyświetl wszystkie pomiary </button>
+        </div>
+        <div id="div_clear"> </div>
+    </div>
+
+    <div id="user_panel">
+        <a class="button_link" href="/LoginForm"> zaloguj </a>
+        <a class="button_link" href="/SignForm"> zarejestruj się </a>
+        <a class="button_link" href="/logout"> wyloguj </a>
+    </div>
+
+    <div id="div_form"> </div>
+    <div id="div_content"> </div> 
+    <div id="div_chart"> </div>
+
+    <footer>
+        <div id="footer_div" > &copy; TI projekt - Maciej Walczak 2021 </div>
+    </footer>
+
+</body>
+</html>

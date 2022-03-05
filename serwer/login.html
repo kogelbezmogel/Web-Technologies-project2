@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="log_style.css" />
+</head>
+
+<body>
+
+    <p>
+        <h1> Logowanie </h1>
+    </p>
+
+    <div>
+        <fieldset>
+            <form action='/login' method='POST'>
+                <fieldset>
+                    <label for='name'> Nazwa użytkownika: </label>
+                    <input id='name' name='name' type='text' /> </br>
+                </fieldset>
+                <fieldset>
+                    <label for='pass'> Hasło: </label>
+                    <input id='pass' name='pass' type='password' /> </br>
+                </fieldset>
+                <input id="submit_log" type=submit value='Zaloguj' />
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
